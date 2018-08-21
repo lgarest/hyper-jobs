@@ -1,0 +1,8 @@
+{
+    "presets": ["latest"],
+    "plugins": [
+      "babel-plugin-transform-runtime",
+      ["transform-react-jsx", { "pragma": "h" }],
+      "transform-object-rest-spread"
+    ]
+}
