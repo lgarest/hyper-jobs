@@ -1,9 +1,9 @@
 /* 3rd party imports */
-const merge = require('webpack-merge');
-const path = require('path');
+const merge = require('webpack-merge')
+const path = require('path')
 
 /* relative imports */
-const common = require('./webpack.common.js');
+const common = require('./webpack.common.js')
 
 
 module.exports = merge(common, {
@@ -21,4 +21,4 @@ module.exports = merge(common, {
     open: true,
   },
   mode: 'development',
-});
+})
