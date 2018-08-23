@@ -42,7 +42,7 @@ export const fetchJobs = (params = Object.keys(defaultParams)
     actions.updateLoading()
     myAxios.get(`?${params}`)
       .then(response => actions.updateJobs(response.data))
-      .catch(error => console.error(error))
+      .catch(error => actions.showNotification(error))
       .then(() => actions.updateLoading(false))
   }
 

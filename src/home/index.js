@@ -1,7 +1,7 @@
 import { h } from 'hyperapp'
 import Spinner from './spinner.jsx'
 import JobsList from './jobs-list.jsx'
-
+import './home.css'
 
 export default (state, actions) => (
   <div oncreate={() => actions.fetchJobs()}>
@@ -11,7 +11,7 @@ export default (state, actions) => (
         ? <Spinner />
         : state.jobs.length !== 0
         ? <JobsList />
-        : 'Oops'
+        : state.notification
     }
   </div>
 )

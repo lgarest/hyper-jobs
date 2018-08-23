@@ -6,7 +6,8 @@ import { fetchJobs } from './honeycomb'
 
 
 const state = {
-  message: 'Hello World!',
+  message: 'Find me a job',
+  notification: '',
   loading: false,
   jobs: [],
 }
@@ -16,6 +17,7 @@ const actions = {
   updateLoading: (loadingStatus = true) => () => ({
     loading: loadingStatus,
   }),
+  showNotification: notification => ({ notification }),
   updateJobs: (jobs = []) => ({ jobs }),
   fetchJobs,
 }
