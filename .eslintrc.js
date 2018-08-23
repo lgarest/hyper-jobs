@@ -24,6 +24,7 @@ module.exports = {
       varsIgnorePattern: '^h$'
     }],
     'no-underscore-dangle': 0,
+    'no-unused-expressions': 0,
     'no-nested-ternary': 0,
     'react/jsx-uses-vars': 'error',
   },
